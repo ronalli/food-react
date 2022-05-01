@@ -13,8 +13,8 @@ const MealItem = (props) => {
         <span className='card-title'>{title}</span>
       </div>
       <div className='card-action'>
-        <Link to={`/category/${name.toLowerCase()}/${id}`} className='btn'>
-          Watch Category
+        <Link to={`/meal/${id}`} className='btn'>
+          Watch Recepie
         </Link>
       </div>
     </div>

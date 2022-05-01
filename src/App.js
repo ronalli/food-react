@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Footer, Header } from './components';
 import './App.css';
-import { About, Contact, Home, NotFount, Category } from './pages';
+import { About, Contact, Home, NotFount, Category, Recipe } from './pages';
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
             <Route path='*' element={<NotFount />} />
             <Route path='/' element={<Home />} />
             <Route path='/category/:name' element={<Category />} />
+            <Route path='/meal/:id' element={<Recipe />} />
             <Route path='/about' element={<About />} />
             <Route path='/contact' element={<Contact />} />
           </Routes>
