@@ -10,10 +10,10 @@ function App() {
         <Header />
         <main className='container content'>
           <Routes>
+            <Route path='*' element={<NotFount />} />
             <Route path='/' element={<Home />} />
             <Route path='/about' element={<About />} />
-						<Route path='/contact' element={<Contact />}/>
-            <Route element={<NotFount />} />
+            <Route path='/contact' element={<Contact />} />
           </Routes>
         </main>
         <Footer />
