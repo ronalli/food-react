@@ -17,7 +17,7 @@ const CategoryItem = (props) => {
         <p>{description.slice(0, 60)}...</p>
       </div>
       <div className='card-action'>
-        <Link to={`/category/${id}`} className='btn'>
+        <Link to={`/category/${category}`} className='btn'>
           Watch Category
         </Link>
       </div>
